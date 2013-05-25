@@ -9,4 +9,5 @@ setup(name='Spiff',
     url='http://github.com/synhak/spiff',
     py_modules=['spiff'],
     requires=['requests'],
+    scripts=['spiff-cli'],
 )
