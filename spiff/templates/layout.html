@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 {% load bootstrap_toolkit %}
 {% load url from future %}
-{% load gravatar %}
+{% load avatar_tags %}
 <html>
 <head>
   <meta charset="utf-8">
@@ -35,7 +35,7 @@
         {% if user.is_anonymous %}
           <i class="icon-home"></i> Guest
         {% else %}
-          {% gravatar user 24 %} {{user.member.fullName}}
+          {% avatar user 24 %} {{user.member.fullName}}
         {% endif %}
         <b class="caret"></b>
       </a>

@@ -127,7 +127,7 @@ INSTALLED_APPS = (
     'django.contrib.admindocs',
     'bootstrap_toolkit',
     'south',
-    'gravatar',
+    'avatar',
     #'webfinger',
     'django_openid_auth',
     'openid_provider',
