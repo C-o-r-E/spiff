@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% load gravatar %}
+{% load avatar_tags %}
 
 {% block title %}Active Members{% endblock %}
 {% block pageTitle%}Active Members{% endblock %}
@@ -11,7 +11,7 @@
   <tr class="{% cycle 'odd' 'even' %}">
     <td>
       <a href="{% url 'membership:view' user__username=member.user.username %}">
-        {% gravatar member.user %} {{member.fullName}}
+        {% avatar member.user %} {{member.fullName}}
       </a>
     </td>
     <td>{{member.created}}</td>
